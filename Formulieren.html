@@ -17,76 +17,117 @@ Amsterdam.</i></p>
     <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
 Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
 Voor vragen of opmerkingen kunt u <a href="http://www.hva.nl/over-de-hva/contact/contact.html">contact</a> met ons op.</p>
+    <form>
+        <fieldset>
+            <legend>Contactgegevens</legend>
+            <label>Naam
+                <input type="text" placeholder=" uw naam" autofocus> Naam
+            </label>
+            <label>Bedrijf
+                <input type="text" placeholder=" uw bedrijfsnaam">
+            </label>
+            <label>Adres
+                <input type="text" placeholder=" uw straatnaam"><input type=text placeholder=" nummer" maxlength=5 size=5>                </label>
+            <label>Postcode
+                <input type="text" placeholder=" 1234XX" maxlength=6 size=6>
+            </label>
+            <label>Plaats
+                <input type="text" placeholder=" uw plaatsnaam">
+            </label>
+            <label>Telefoon
+                <input type="tel" placeholder=" 06">
+            </label>
+            <label>Email <input type="email" placeholder=" uwnaam@voorbeeld.nl"></label>
 
-    <fieldset>
-        <legend>Contactgegevens</legend>
-        <form>Naam <input type="text" placeholder=" uw naam"></form>
-        <form>Bedrijf <input type="text" placeholder=" uw bedrijfsnaam"></form>
-        <form>Adres <input type="text" placeholder=" uw straatnaam"><input type=text placeholder=" nummer" maxlength=5 size=5></form>
-        <form>Postcode <input type="text" placeholder=" 1234XX" maxlength=6 size=6></form>
-        <form>Plaats <input type="text" placeholder=" uw plaatsnaam"></form>
-        <form>Telefoon <input type="tel" placeholder=" 06"></form>
-        <form>Email <input type="email" placeholder=" uwnaam@voorbeeld.nl"></form>
+            <p>Ik wil mij aanmelden:</p>
+            <input type=radio value="project" id="project" name="projectstage" checked> Voor een project
+            <input type=radio value="stage" id="stage" name="projectstage"> Als stageberijf
+        </fieldset>
 
-        <p>Ik wil mij aanmelden:</p>
-        <input type=radio value="project" id="project" name="projectstage" checked> Voor een project
-        <input type=radio value="stage" id="stage" name="projectstage"> Als stageberijf
-    </fieldset>
+        <fieldset id="project_field">
+            <legend>Project</legend>
+            <label>Titel
+                <input type="text" placeholder=" naam van project">
+            </label>
+            <label>Opdrachtomschrijving
+                <textarea rows="3" cols="80"></textarea>
+            </label>
+            <label>Doelgroepomschrijving
+                <textarea rows="3" cols="80"></textarea>
+            </label>
+            <label>Doelstelling/ intentie van het project
+                <textarea rows="3" cols="80"></textarea>
+            </label>
+            <label>Looptijd
+                <input type="text" placeholder=" 200" size=4 maxlength="4">uur
+            </label>
+            <label>Deadline
+                <input type=date>
+            </label>
 
-    <fieldset id="project_field">
-        <legend>Project</legend>
-        <form>Titel <input type="text" placeholder=" naam van project"></form>
-        <form>Opdrachtomschrijving
-        <textarea rows="3" cols="80"></textarea> </form>
-        <form>Doelgroepomschrijving
-        <textarea rows="3" cols="80"></textarea> </form>
-        <form>Doelstelling/ intentie van het project
-        <textarea rows="3" cols="80"></textarea> </form>
-        <form>Looptijd <input type="text" placeholder=" 200" size=4 maxlength="4">uur </form>
-        <form>Deadline <input type=date></form>
+            <label>Geschikt voor
+               <select name="opleiding">
+                    <option value="eerstejaars">Eerstejaars studenten</option>
+                    <option value="tweedejaars">Tweedejaars studenten</option>
+                    <option value="derdejaars">Derdejaars studenten</option>
+                    <option value="afstudeerders">Afstudeer studenten</option>
+                    <option value="onbekend">Onbekend</option>
+                </select>
+            </label>
 
-        <form>Geschikt voor <select name="opleiding">
-            <option value="eerstejaars">Eerstejaars studenten</option>
-            <option value="tweedejaars">Tweedejaars studenten</option>
-            <option value="derdejaars">Derdejaars studenten</option>
-            <option value="afstudeerders">Afstudeer studenten</option>
-            <option value="onbekend">Onbekend</option>
-        </select></form>
+            <label>Opmerking(en)
+                <textarea rows="3" cols="80"></textarea>
+            </label>
+        </fieldset>
 
-        <form>Opmerking(en)
-        <textarea rows="3" cols="80"></textarea> </form>
-    </fieldset>
+        <fieldset id="stage_field">
+            <legend>Stage</legend>
+            <label>Geschikt voor
+                <select name="opleiding">
+                    <option value="tweedejaars">Tweedejaars studenten</option>
+                    <option value="afstudeerders">Afstudeer studenten</option>
+                    <option value="onbekend">Onbekend</option>
+                </select>
+            </label>
 
-    <fieldset id="stage_field">
-        <legend>Stage</legend>
-        <form>Geschikt voor <select name="opleiding">
-            <option value="tweedejaars">Tweedejaars studenten</option>
-            <option value="afstudeerders">Afstudeer studenten</option>
-            <option value="onbekend">Onbekend</option>
-        </select></form>
+            <label>Hoe lang is de stage?
+                <input type=radio value="10weken" name="weken"> 10 weken
+                <input type=radio value="20weken" name="weken"> 20 weken
+            </label>
 
-        <form>Hoe lang is de stage?
-        <input type=radio value="10weken" name="weken"> 10 weken
-        <input type=radio value="20weken" name="weken"> 20 weken</form>
+            <label>Begin datum
+                <input type=date>
+            </label>
 
-        <form>Begin datum <input type=date></form>
+            <label>Beschrijving werkzaamheden
+                <textarea rows="3" cols="80"></textarea>
+            </label>
 
-        <form>Beschrijving werkzaamheden
-        <textarea rows="3" cols="80"></textarea> </form>
+            <p>Beschrijving stagebedrijf:</p>
+            <label>Bedrijfsnaam
+                <input type="text" placeholder=" naam bedrijf">
+            </label>
+            <label>Adres
+                <input type="text" placeholder=" straatnaam bedrijf">
+                <input type=text placeholder=" nummer" maxlength=5 size=5>
+            </label>
+            <label>Postcode
+                <input type="text" placeholder=" 1234XX" maxlength=6 size=6>
+            </label>
+            <label>Plaats
+                <input type="text" placeholder=" plaatsnaam bedrijf">
+            </label>
+            <label>Sector
+                <input type="text" placeholder=" telefoonnummer bedrijf">
+            </label>
+            <label>Core Buisness
+                <input type="text" placeholder=" Core Buisness">
+            </label>
 
-        <p>Beschrijving stagebedrijf:</p>
-        <form>Bedrijfsnaam <input type="text" placeholder=" naam bedrijf"></form>
-        <form>Adres <input type="text" placeholder=" straatnaam bedrijf"><input type=text placeholder=" nummer" maxlength=5 size=5></form>
-        <form>Postcode <input type="text" placeholder=" 1234XX" maxlength=6 size=6></form>
-        <form>Plaats <input type="text" placeholder=" plaatsnaam bedrijf"></form>
-        <form>Sector <input type="text" placeholder=" telefoonnummer bedrijf"></form>
-        <form>Core Buisness <input type="text" placeholder=" Core Buisness"></form>
-
-        <form>Opmerking(en)
-        <textarea rows="3" cols="80"></textarea> </form>
-
-    </fieldset>
-    <script src="forms.js"></script>
+            <label>Opmerking(en)
+                <textarea rows="3" cols="80"></textarea>
+            </label>
+        </fieldset>
+    </form>
 </body>
-
 </html>
