@@ -1,0 +1,252 @@
+@media (max-width: 480px) {
+    label {
+        display: block;
+    }
+
+    body {
+        background: green;
+        color: grey;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .flex-nav-header {
+        margin: 1em;
+        order: 1;
+        width: 25em;
+    }
+    .flex-article {
+        margin: 1em;
+        order: 2;
+        width: 22em;
+    }
+
+    .flex-related {
+        margin: 1em;
+        order: 3;
+        width: 20em;
+    }
+
+    .flex-aside {
+        order: 4;
+        width: 10em;
+    }
+
+    .flex-footer {
+        order: 5;
+        width: 20em;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;}
+
+    h1 {
+        border-color: yellow;
+        border-radius: 10em;
+        border-style: solid;
+        box-shadow: .1em .9em 2em .1em rgba(255,255,0,.9);
+        color: black;
+        padding: 1em;
+        text-align: center;
+        text-shadow: 5px 1px yellow;
+    }
+
+    h2 {
+        background: yellow;
+        box-shadow: 10px 11px 5px rgba(10,50,200,0.25);
+    }
+
+    p:hover {
+        background-color: grey;
+        font-weight: bold;
+        text-decoration:line-through;
+        transform: rotate(180deg);
+        transition: all ease-in;
+    }
+
+    p:nth-child(2) {
+        background: rgba(100,200,200,.4);
+    }
+
+    h2 + p {
+        text-decoration:line-through;
+    }
+
+    a[href] {
+         background-color: rgba(10,255,30,.2);
+    }
+
+    input[type="search"]:hover {
+        transform: rotate(20deg);
+        transition: all 4s ease-in;
+    }
+
+    img {
+        width: 80%;
+     }
+
+    img:hover {
+        background-color: black;
+    }
+
+    button:hover {
+        transform: rotate(360deg);
+        transition: all 1s ease-in;
+    }
+
+    a:hover {
+        color: black;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    li:hover {
+        background: yellow;
+    }
+
+    .flex-container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    .flex-item {
+        background: white;
+        font-size: .8em;
+        font-weight: 100;
+        height: 1em;
+        line-height: 0.9em;
+        padding: 0.5em;
+        text-align: center;
+        width: 15em;
+    }
+}
+
+@media (max-width: 2000px) and (min-width: 481px) {
+
+    label {
+        display: block;
+    }
+
+    body {
+        background: red;
+        color: grey;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .flex-nav-header {
+        margin: 1em;
+        order: 1;
+        width: 15em;
+    }
+    .flex-article {
+        margin: 1em;
+        order: 2;
+        width: 30em;
+    }
+
+    .flex-related {
+        margin: 1em;
+        order: 3;
+        width: 20em;
+    }
+
+    .flex-aside {
+        order: 4;
+        width: 15em;
+    }
+
+    .flex-footer {
+        order: 5;
+        width: 20em;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;}
+
+    h1 {
+        border-color: yellow;
+        border-radius: 10em;
+        border-style: solid;
+        box-shadow: .5em .1em 2em rgba(255,255,0,.9);
+        color: black;
+        padding: 1em;
+        text-align: center;
+        text-shadow: 5px 1px yellow;
+    }
+
+    h2 {
+        background: yellow;
+        box-shadow: 10px 11px 5px 1px rgba(10,50,200,0.25);
+    }
+
+    p:hover {
+        background-color: grey;
+        font-weight: bold;
+        text-decoration:line-through;
+        transform: rotate(180deg);
+        transition: all ease-in;
+    }
+
+    p:nth-child(2) {
+        background: rgba(100,200,200,.4);
+    }
+
+    main > p {
+        text-decoration:line-through;
+    }
+
+    a[href] {
+         background-color: rgba(10,255,30,.2);
+    }
+
+    input[type="search"]:hover {
+        transform: rotate(20deg);
+        transition: all 4s ease-in;
+    }
+
+    img {
+        width: 80%;
+     }
+
+    img:hover {
+        background-color: black;
+    }
+
+    button:hover {
+        transform: rotate(360deg);
+        transition: all 1s ease-in;
+    }
+
+    a:hover {
+        color: black;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    li:hover {
+        background: yellow;
+    }
+
+    .flex-container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    .flex-item {
+        background: white;
+        font-size: .8em;
+        font-weight: 100;
+        height: 1em;
+        line-height: 0.9em;
+        padding: 0.5em;
+        text-align: center;
+        width: 15em;
+    }
+
+
+}
